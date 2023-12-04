@@ -1,21 +1,31 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft, FaCircle } from "react-icons/fa";
+import {
+  FaArrowAltCircleRight,
+  FaArrowAltCircleLeft,
+  FaCircle,
+} from "react-icons/fa";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
+  const [activeDot, setActiveDot] = useState(0);
   const length = slides.length;
 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    const nextIndex = current === length - 1 ? 0 : current + 1;
+    setCurrent(nextIndex);
+    setActiveDot(nextIndex);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    const prevIndex = current === 0 ? length - 1 : current - 1;
+    setCurrent(prevIndex);
+    setActiveDot(prevIndex);
   };
 
   const goToSlide = (slideIndex) => {
     setCurrent(slideIndex);
+    setActiveDot(slideIndex);
   };
 
   if (!Array.isArray(slides) || slides.length <= 0) {
@@ -38,9 +48,11 @@ const ImageSlider = ({ slides }) => {
               className="icon right-arrow"
               onClick={nextSlide}
             />
-            <span>{index+1}/{slides.length}</span>
+            <span>
+              {index + 1}/{slides.length}
+            </span>
             {index === current && (
-              <img src={slide.image} alt="travel image" className="image" />
+              <img src={slide.image} alt="Slide image" className="image" />
             )}
           </div>
         ))}
@@ -50,7 +62,7 @@ const ImageSlider = ({ slides }) => {
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
-            className="dot"
+            className={`dot ${slideIndex === activeDot ? "active_dot" : ""}`}
             onClick={() => goToSlide(slideIndex)}
           >
             <FaCircle />
