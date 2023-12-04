@@ -1,11 +1,19 @@
-import "./assets/css/styles.scss"
+import "./assets/css/styles.scss";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from "./containers/home";
+import Fixtures from "./containers/fixtures";
+import Players from "./containers/players"
 
 export default function App() {
   return (
-    <>
-      <div>
-        <h1>Initial Setup</h1>
-      </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/fixtures" element={ <Fixtures /> } />
+        <Route path="/players" element={ <Players /> } />
+      </Routes>
+    </Router>
+  );
 }
