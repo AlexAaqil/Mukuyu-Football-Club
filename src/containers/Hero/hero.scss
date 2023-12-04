@@ -1,0 +1,55 @@
+.Hero {
+    height: 80vh;
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        .text {
+            h1 {
+                font-size: calc(16px + 10vw);
+            }
+
+            p {
+                font-size: calc(16px + 3.5vw);
+                margin: 0.3em;
+            }
+        }
+
+        img {
+            width: 300px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (width >= 900px){
+    .Hero {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .text {
+                h1 {
+                    font-size: 5em;
+                    text-transform: uppercase;
+                    text-align: left;
+
+                    span {
+                        color: #F51E47;
+                    }
+                }
+
+                p {
+                    font-size: 2em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

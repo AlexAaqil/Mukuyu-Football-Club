@@ -1,0 +1,42 @@
+.Profiles {
+  visibility: hidden;
+}
+
+@media screen and (width >= 900px) {
+  .Profiles {
+    margin: 5em 0;
+    visibility: visible;
+
+    .content {
+      height: 75vh;
+      background: linear-gradient(18deg, rgba(0, 0, 0, 0.9), rgba(196, 7, 7, 0.1)), url("../../assets/images/01.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      border-radius: 32px;
+
+      .text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+        }
+
+        a {
+          text-decoration: none;
+          margin: 0;
+          color: #fff;
+          font-size: 1.5em;
+
+          &:hover {
+            color: #F51E47;
+          }
+        }
+      }
+    }
+  }
+}

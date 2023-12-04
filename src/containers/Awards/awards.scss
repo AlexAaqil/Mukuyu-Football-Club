@@ -1,0 +1,33 @@
+.Awards {
+    .container {
+        h1 {
+            text-align: center;
+            font-size: calc(16px + 5vw);
+            margin: 0.6em auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (width >= 900px) {
+    .Awards {
+        margin: 5.5em 0;
+        .container {
+            h1 {
+                font-size: 3em;
+                text-transform: uppercase;
+            }
+
+            .images {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+                gap: 0.5em 1em;
+            }
+        }
+    }
+}
