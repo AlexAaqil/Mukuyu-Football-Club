@@ -1,6 +1,6 @@
 import "./assets/css/styles.scss";
 
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./containers/home";
 import Fixtures from "./containers/fixtures";
