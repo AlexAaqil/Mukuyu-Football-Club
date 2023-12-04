@@ -31,9 +31,9 @@ export default function Navbar() {
               <li>
                 <a href="/players">PLAYERS</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#footer">CONTACTS</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
