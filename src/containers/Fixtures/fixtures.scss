@@ -1,0 +1,119 @@
+.Fixtures {
+  h2 {
+    font-size: 1.3em;
+    margin: 0 0 0.3em;
+    text-transform: uppercase;
+  }
+
+  .fixtures_navbar {
+    background: #000;
+    margin: 10vh 0 1em;
+    padding: 1em 0;
+    position: sticky;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 0 2em;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .UpComingMatches {
+    .MatchesList {
+      .Match {
+        .header {
+          background: #f2f2f2;
+          padding: 0.5em;
+
+          h3 {
+            font-size: 0.9em;
+            font-weight: 500;
+          }
+        }
+
+        .body {
+          padding: 1em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0 1em;
+
+          span {
+            background: #000;
+            color: #fff;
+            font-weight: bold;
+            padding: 0.1em 0.4em;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .Tables {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5em 0;
+
+      thead {
+        background: #f2f2f2;
+
+        tr {
+          th {
+            padding: 0.3em 0.2em;
+
+            &:nth-of-type(2) {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            text-align: center;
+            border-bottom: 1px solid rgb(228, 228, 228);
+            height: 50px;
+
+            &:nth-of-type(2) {
+              text-align: left;
+            }
+          }
+        }
+
+        .my_team {
+          td {
+            font-weight: bold;
+
+            &:nth-of-type(2) {
+              color: #f51e47;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (width >= 900px){
+    .Tables {
+        table {
+            width: 90%;
+        }
+    }
+}
