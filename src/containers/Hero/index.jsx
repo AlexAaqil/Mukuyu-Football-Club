@@ -7,10 +7,12 @@ export default function Hero() {
     <section id="hero" className="Hero">
       <div className="container">
         <div className="text">
-          <h1>
+          {/* <h1>
             <span>Mukuyu</span> Football Club
+          </h1> */}
+          <h1>
+            Home of Legendary <br /> Football
           </h1>
-          <p>Legendary Football</p>
         </div>
         <img src={images.logo} alt="logo" />
       </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import "./navbar.scss";
-
+import images from "../../assets/images/images"
 
 export default function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -14,6 +14,7 @@ export default function Navbar() {
       <nav>
         <div className="container">
           <a href="/" className="brand">
+            <img src={images.logo} alt="Logo" />
             Mukuyu FC
           </a>
 

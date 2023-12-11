@@ -1,56 +1,63 @@
 .Hero {
-    height: 80vh;
-    padding: 5em 0 0;
+  height: 80vh;
+  padding: 5em 0 0;
 
-    .container {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
 
-        .text {
-            h1 {
-                font-size: calc(16px + 10vw);
-            }
+    .text {
+      h1 {
+        font-size: calc(16px + 10vw);
+      }
 
-            p {
-                font-size: calc(16px + 3.5vw);
-                margin: 0.3em;
-            }
-        }
-
-        img {
-            width: 300px;
-            margin: auto;
-        }
+      p {
+        font-size: calc(16px + 3.5vw);
+        margin: 0.3em;
+      }
     }
+
+    img {
+      width: 300px;
+      margin: auto;
+    }
+  }
 }
 
-@media screen and (width >= 900px){
-    .Hero {
-        height: 90vh;
-        display: flex;
-        align-items: center;
+@media screen and (width >= 900px) {
+  .Hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(241, 22, 106, 0.1)),
+      url("../../assets/images/02.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-            .text {
-                h1 {
-                    font-size: 5em;
-                    text-transform: uppercase;
-                    text-align: left;
+      .text {
+        color: #fff;
 
-                    span {
-                        color: #F51E47;
-                    }
-                }
-
-                p {
-                    font-size: 2em;
-                    text-align: left;
-                }
-            }
+        h1 {
+          font-size: 5em;
+          text-transform: uppercase;
+          text-align: left;
         }
+
+        p {
+          font-size: 2em;
+          text-align: left;
+        }
+      }
+
+      img {
+        display: none;
+      }
     }
+  }
 }

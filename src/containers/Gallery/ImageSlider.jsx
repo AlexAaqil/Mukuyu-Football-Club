@@ -1,10 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import {
-  FaArrowAltCircleRight,
-  FaArrowAltCircleLeft,
-  FaCircle,
-} from "react-icons/fa";
+import { FaAngleRight, FaAngleLeft, FaCircle } from "react-icons/fa";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -40,11 +36,11 @@ const ImageSlider = ({ slides }) => {
             className={index === current ? "slide active" : "slide"}
             key={index}
           >
-            <FaArrowAltCircleLeft
+            <FaAngleLeft
               className="icon left-arrow"
               onClick={prevSlide}
             />
-            <FaArrowAltCircleRight
+            <FaAngleRight
               className="icon right-arrow"
               onClick={nextSlide}
             />

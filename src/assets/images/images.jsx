@@ -1,5 +1,5 @@
 // General Images
-import logo from "./logo.jpeg";
+import logo from "./logo.png";
 import table from "./table.jpeg";
 import team_photo from "./team photo.jpg";
 import image01 from "./01.jpeg";
