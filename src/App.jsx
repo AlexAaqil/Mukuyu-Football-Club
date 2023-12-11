@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./containers/home";
 
 import Fixtures from "./containers/Fixtures/";
-import UpComingMatches from "./containers/Fixtures/UpcomingMatches";
+import UpComingMatches from "./containers/Fixtures/UpComingMatches";
 import MatchResults from "./containers/Fixtures/MatchResults";
 import Tables from "./containers/Fixtures/Tables";
 
